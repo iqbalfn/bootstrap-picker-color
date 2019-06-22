@@ -1,3 +1,3 @@
-# bootstrap-vertical-menu
+# bootstrap-picker-color
 
-Vertical menu component for bootstrap 4 with optional submenu.
+Another useless jquery plugin for bootstrap 4 of color picker that implement browser built-in picker.
