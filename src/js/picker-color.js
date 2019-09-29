@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * Bootstrap Picker Color (v0.0.1): picker-color.js
+ * Bootstrap Picker Color (v0.0.2): picker-color.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -15,7 +15,7 @@ import Util from './util'
  */
 
 const NAME               = 'pickercolor'
-const VERSION            = '0.0.1'
+const VERSION            = '0.0.2'
 const DATA_KEY           = 'bs.pickercolor'
 const EVENT_KEY          = `.${DATA_KEY}`
 const DATA_API_KEY       = '.data-api'
@@ -82,6 +82,7 @@ class PickerColor {
     _addElementListener(){
         $(this._element).on(Event.CHANGE, e => {
             this._input.value = e.target.value.toUpperCase()
+            this._inputChanges()
         })
 
         $(this._input).on(Event.CHANGE, e => this._inputChanges())
